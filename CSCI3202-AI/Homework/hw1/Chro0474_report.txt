@@ -1,0 +1,22 @@
+Name: Chakrya Ros
+Homework1
+
+
+4. A* search:
+
+	4.b. I would say euclideanHeuristic is admissible and not consistent. It's admissible because h(n) the estimate of the cheapest cost of a path from n to goal was less or equal to h*(n) true cheapest cost from n to the goal and h of goal was Zeor. It's not consistent because h(n) the esticmate cost from n to the goal was not greater than the step cost to its successor n' plus the estimated cost from the successor to the goal.
+
+	- The performance of manhattan just find the distance that sum of all the real distance between start state and goal state. Mathematically, it computes the difference between coordinates of pair of states, it computes the straight line. In this game, manhattan expanded the node 549 and total cost of 210.
+
+	- The performance of euclidean just find the distance that is shorestest path between current state and goal state. Mathematically, it compute the root of square difference between coordinates of pair of states. In this game, euclidean expended the node 557 and total cost of 210.
+
+	- The performance of random just get the random number from randomHeuristic function. It didn't compute any distance between current state and goals state. It's just the garbage number. In this game. it always got different expended the node every times I ran the game. 
+
+5. Algorithm Comparison
+
+	- A* with Manhattan with openMaz , its behavior is straight forward, it just moved to straight direction and turn left two times and reach the goal because its algorithms just calculate the distance of current state from the goal. It searched the same expend node and got the same total cost of the path.
+
+	- A* with Euclidean with openMaz, its behavior is different from Manhattan, it turn left many times, it didn't move straight forward like Manhattan because it computes the root of square difference between coordinates of pair of states. It got the same total cost 54 as Manhattan, just it expends a few more node than Manhattan.
+
+
+	- A* with randomHeuristic with openMaz, its behavior is different from Manhattan and Euclidean because it got random number, it didn't calculate the distance of current state from the goal. It just ran in random place. It got all garbage number from random number. It expends alot of node than Manhattan and Euclidean like 683 and the total cost of 60.
